@@ -2,9 +2,9 @@
 Bookmart to line notify
 
 # 用 Line Notify 做一個元氣彈書籤
-j.mp/bookmarkflyme 簡單教學影片。
+http://j.mp/bookmarkflyme 簡單教學影片。
 
-j.mp/linebomb
+http://j.mp/linebomb
 - 申請 LINE Notify 權杖
   "https://notify-bot.line.me/zh_TW/"
 - 個人頁面>發行「權杖」> 指定權杖名稱 ( 傳送通知訊息時所顯示的名稱 ) > 選擇是要一對一接收，或是讓群組也可以接收通知。權杖只出現一次，需好好保管。
