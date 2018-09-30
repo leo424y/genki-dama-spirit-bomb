@@ -35,7 +35,7 @@ function doPost(e) {
   "https://bookmarkify.it"
 - Name it 填上書籤的名字 > 換APP_KEY成你自己的，然貼到Javascript it 框框裡
 ```
-var url_string = window.location.href; var jq = document.createElement('script'); jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"; document.getElementsByTagName('head')[0].appendChild(jq);jQuery.noConflict();jQuery.post('https://script.google.com/macros/s/APP_KEY/exec', {msg: url_string}, function(e){ console.log(e); });
+var note = encodeURI(prompt("網址補充說明", ""));var url_string = window.location.href; var jq = document.createElement('script'); jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"; document.getElementsByTagName('head')[0].appendChild(jq);jQuery.noConflict();jQuery.post('https://script.google.com/macros/s/APP_KEY/exec', {msg: decodeURI(note) + " " + url_string}, function(e){ console.log(e); });
 ```
 - 得到書籤網址，就能分享出去囉！使用你的書籤的朋友，都能把正在瀏覽的頁面直接 Line 給你！https://bookmarkify.it/你的序號
 - 如果使用 Chrome可能不能直接拉到書籤列，將下面這段的「你的序號」換成自己的，接著新增到書籤即可
